@@ -1,7 +1,7 @@
 class Uhubctl < Formula
   desc "control USB hubs powering per-port"
-  homepage "https://github.com/mvp/uhubctl"
-  head "https://github.com/mvp/uhubctl.git"
+  homepage "https://github.com/stocktonkincade/uhubctl"
+  head "https://github.com/stocktonkincade/uhubctl.git"
 
   depends_on "libusb"
 
