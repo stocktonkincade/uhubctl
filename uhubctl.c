@@ -859,6 +859,10 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
+    const struct libusb_version *ver;
+    ver = libusb_get_version ();
+    printf("libusb version: %d.%d.%d.%d\n", ver->major, ver->minor, ver->micro, ver->nano); 
+
     rc = libusb_get_device_list(NULL, &usb_devs);
     if (rc < 0) {
         fprintf(stderr,
